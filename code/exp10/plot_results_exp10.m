@@ -9,7 +9,7 @@ matched_permutation_test_file = fullfile(file_path, sprintf('../../results/%s/ma
 load(matched_permutation_test_file)
 indices = [6, 8, 10]; % corresponds to timepoints 1500, 2000, 2500 ms
 test_indices = setdiff(1:10, indices);
-periodicity_file = fullfile(file_path, sprintf('../../results/%s/periodicity_values.mat', exp_name));
+periodicity_file = fullfile(file_path, '../../assets/periodicity_values/periodicity_values.mat');
 load(periodicity_file)
 save_path = fullfile(file_path, sprintf('../../figures/%s/', exp_name)); % get path to save figure
 if ~exist(save_path, 'dir'); mkdir(save_path); end
